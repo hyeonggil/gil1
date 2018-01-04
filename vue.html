@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="EditPlus®">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<title>vue</title>
+
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+
+<div id="app">
+	<button @click="counter += 1">Add 1</button>
+	<p>위 버튼을 클릭한 횟수는 {{ counter }} 번 입니다.</p>
+	
+	<p>{{ massage }}</p>
+	<input type="text" v-model="massage">
+
+</div>
+
+<script>
+var app = new Vue({
+  el: '#app',
+  data: {
+    counter: 0,
+    massage: 'Hellow Vue'
+  }
+})
+</script>
+
+</body>
+</html>
